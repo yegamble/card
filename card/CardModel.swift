@@ -12,33 +12,51 @@ class CardModel {
     
     func getCards() -> [Card]{
         
+        //Array to store previously generated numbers
+        var generatedNumbersArray = [Int]()
+        
         //Declare array to store generated cards
         var generatedCardsArray = [Card]()
         
         //Randomly generate pairs of cards
-        for _ in 1...8 {
+        while generatedNumbersArray.count < 8 {
             
             //Random number generator (0-7) + 1
             let randomNumber = arc4random_uniform(8) + 1
             
-            // Log the number
-            print(randomNumber)
             
-            //Create first card Object
-            let cardOne = Card()
-            cardOne.imageName = "colour\(randomNumber)"
-            
-            generatedCardsArray.append(cardOne)
-            
-            // Create second card object
-            let cardTwo = Card()
-            cardTwo.imageName = "colour\(randomNumber)"
-
-            generatedCardsArray.append(cardTwo)
-            
-            //OPTIONAL: Make only unique pairs of cards
+            //make sure random numbers are unique
+            if generatedNumbersArray.contains(Int(randomNumber)) == false {
+                // Log the number
+                print(randomNumber)
+                
+                //Create first card Object
+                let cardOne = Card()
+                cardOne.imageName = "colour\(randomNumber)"
+                
+                //Store number in generated numbers array
+                generatedNumbersArray.append(Int(randomNumber))
+                
+                generatedCardsArray.append(cardOne)
+                
+                // Create second card object
+                let cardTwo = Card()
+                cardTwo.imageName = "colour\(randomNumber)"
+                
+                generatedCardsArray.append(cardTwo)
+            }
         }
-        //Randomise array
+        
+        //TODO: Randomise array
+        
+        for i in 0...generatedCardsArray.count - 1{
+            let randNumber = Int(arc4random_uniform(UInt32(generatedCardsArray.count)))
+        
+        
+            let tempStorage = generatedCardsArray[0]
+            generatedCardsArray[0] = generatedCardsArray[randNumber]
+            generatedCardsArray[randNumber] = tempStorage
+        }
         
         //Return results to array
         return generatedCardsArray

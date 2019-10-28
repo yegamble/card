@@ -10,6 +10,10 @@
 		DF4958CD2362C6A5007387FC /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4958CC2362C6A5007387FC /* CardModel.swift */; };
 		DF4DF401236657DA00F57340 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF400236657DA00F57340 /* Card.swift */; };
 		DF4DF40323665EC700F57340 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF40223665EC700F57340 /* CardCollectionViewCell.swift */; };
+		DF4DF4072366D70000F57340 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF4062366D70000F57340 /* UserModel.swift */; };
+		DF4DF4092366D72600F57340 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF4082366D72600F57340 /* User.swift */; };
+		DF4DF40B2366E04800F57340 /* CardCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF40A2366E04800F57340 /* CardCollectionViewLayout.swift */; };
+		DF4DF40D2366FD5700F57340 /* HighScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF4DF40C2366FD5700F57340 /* HighScore.storyboard */; };
 		DF5555422361DBE20012576A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5555412361DBE20012576A /* AppDelegate.swift */; };
 		DF5555442361DBE20012576A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5555432361DBE20012576A /* SceneDelegate.swift */; };
 		DF5555462361DBE20012576A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5555452361DBE20012576A /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 		DF4958CC2362C6A5007387FC /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		DF4DF400236657DA00F57340 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		DF4DF40223665EC700F57340 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF4DF4062366D70000F57340 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DF4DF4082366D72600F57340 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF4DF40A2366E04800F57340 /* CardCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewLayout.swift; sourceTree = "<group>"; };
+		DF4DF40C2366FD5700F57340 /* HighScore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HighScore.storyboard; sourceTree = "<group>"; };
 		DF55553E2361DBE20012576A /* card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5555412361DBE20012576A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5555432361DBE20012576A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,20 +51,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF4DF40423666B4900F57340 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		DF4DF40523666B5000F57340 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
 		DF5555352361DBE20012576A = {
 			isa = PBXGroup;
 			children = (
@@ -76,15 +70,17 @@
 		DF5555402361DBE20012576A /* card */ = {
 			isa = PBXGroup;
 			children = (
-				DF4DF40523666B5000F57340 /* View Controllers */,
-				DF4DF40423666B4900F57340 /* Models */,
 				DF5555412361DBE20012576A /* AppDelegate.swift */,
 				DF5555432361DBE20012576A /* SceneDelegate.swift */,
 				DF5555452361DBE20012576A /* ViewController.swift */,
 				DF4958CC2362C6A5007387FC /* CardModel.swift */,
+				DF4DF4062366D70000F57340 /* UserModel.swift */,
 				DF4DF400236657DA00F57340 /* Card.swift */,
+				DF4DF4082366D72600F57340 /* User.swift */,
 				DF4DF40223665EC700F57340 /* CardCollectionViewCell.swift */,
+				DF4DF40A2366E04800F57340 /* CardCollectionViewLayout.swift */,
 				DF5555472361DBE20012576A /* Main.storyboard */,
+				DF4DF40C2366FD5700F57340 /* HighScore.storyboard */,
 				DF55554A2361DBE40012576A /* Assets.xcassets */,
 				DF55554C2361DBE40012576A /* LaunchScreen.storyboard */,
 				DF55554F2361DBE40012576A /* Info.plist */,
@@ -153,6 +149,7 @@
 				DF55554E2361DBE40012576A /* LaunchScreen.storyboard in Resources */,
 				DF55554B2361DBE40012576A /* Assets.xcassets in Resources */,
 				DF5555492361DBE20012576A /* Main.storyboard in Resources */,
+				DF4DF40D2366FD5700F57340 /* HighScore.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5555462361DBE20012576A /* ViewController.swift in Sources */,
+				DF4DF40B2366E04800F57340 /* CardCollectionViewLayout.swift in Sources */,
+				DF4DF4072366D70000F57340 /* UserModel.swift in Sources */,
 				DF4958CD2362C6A5007387FC /* CardModel.swift in Sources */,
 				DF4DF401236657DA00F57340 /* Card.swift in Sources */,
+				DF4DF4092366D72600F57340 /* User.swift in Sources */,
 				DF5555422361DBE20012576A /* AppDelegate.swift in Sources */,
 				DF4DF40323665EC700F57340 /* CardCollectionViewCell.swift in Sources */,
 				DF5555442361DBE20012576A /* SceneDelegate.swift in Sources */,
